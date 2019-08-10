@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+int n,m;
+scanf("%d%d",&n,&m);
+int ans=n;
+while(n>=0){
+n=n-((n*m)/100);
+ans=ans+n;
+}
+printf("%d",ans);
+}
